@@ -2,6 +2,7 @@
 $bgColorMain: #0c1323;
 $bgColorUserContainer: #1d204b;
 $bgColorInfoContainer: #5745ea;
+$bgColorTimeContainer: #ff8b64;
 
 /* font colors */
 $fontColorH2: #ffffff;
@@ -12,7 +13,11 @@ body {
   font-family: "Rubik", sans-serif;
   background-color: $bgColorMain;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
 
   .user-container {
     background-color: $bgColorUserContainer;
@@ -90,9 +95,88 @@ body {
     }
   }
 
+  .time-container {
+    background-color: $bgColorTimeContainer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 87%;
+    height: 180px;
+    border-radius: 25px;
+
+    .image-container {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      top: 260px;
+      left: 300px;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .general-info-container {
+      position: relative;
+      background-color: $bgColorUserContainer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 75%;
+      border-radius: 25px;
+
+      .top-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+
+        h3 {
+          font-size: 25px;
+          margin-top: 12px;
+        }
+
+        a {
+          color: #ffffff;
+          opacity: 0.6;
+          font-size: 40px;
+          height: 60px;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &:focus {
+            opacity: 1;
+          }
+        }
+      }
+
+      .lower-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+
+        h1 {
+          font-size: 40px;
+          font-weight: lighter;
+        }
+
+        p {
+          opacity: 0.6;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
   /* Dev Test*/
   h3,
   h2,
+  h1,
   p {
     color: #ffffff;
   }

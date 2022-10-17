@@ -76,27 +76,33 @@ body .user-container .options-container h3:hover {
 body .user-container .options-container h3:focus {
   color: #ffffff;
 }
-body .time-container {
+body .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+body .main-container .time-container {
   background-color: #ff8b64;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 87%;
-  height: 180px;
+  height: 200px;
   border-radius: 25px;
 }
-body .time-container .image-container {
+body .main-container .time-container .image-container {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  top: 260px;
-  left: 300px;
+  height: 25%;
+  margin-right: 20px;
 }
-body .time-container .image-container img {
-  width: 80px;
-  height: 80px;
+body .main-container .time-container .image-container img {
+  width: 85px;
+  height: 85px;
 }
-body .time-container .general-info-container {
+body .main-container .time-container .general-info-container {
   position: relative;
   background-color: #1d204b;
   display: flex;
@@ -106,41 +112,62 @@ body .time-container .general-info-container {
   height: 75%;
   border-radius: 25px;
 }
-body .time-container .general-info-container .top-section {
+body .main-container .time-container .general-info-container:hover {
+  background-color: #606492;
+}
+body .main-container .time-container .general-info-container .top-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
 }
-body .time-container .general-info-container .top-section h3 {
+body .main-container .time-container .general-info-container .top-section h3 {
   font-size: 25px;
   margin-top: 12px;
 }
-body .time-container .general-info-container .top-section a {
+body .main-container .time-container .general-info-container .top-section a {
   color: #ffffff;
   opacity: 0.6;
   font-size: 40px;
   height: 60px;
 }
-body .time-container .general-info-container .top-section a:hover {
+body .main-container .time-container .general-info-container .top-section a:hover {
   opacity: 1;
 }
-body .time-container .general-info-container .top-section a:focus {
+body .main-container .time-container .general-info-container .top-section a:focus {
   opacity: 1;
 }
-body .time-container .general-info-container .lower-section {
+body .main-container .time-container .general-info-container .lower-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
 }
-body .time-container .general-info-container .lower-section h1 {
+body .main-container .time-container .general-info-container .lower-section h1 {
   font-size: 40px;
   font-weight: lighter;
 }
-body .time-container .general-info-container .lower-section p {
+body .main-container .time-container .general-info-container .lower-section p {
   opacity: 0.6;
   font-size: 15px;
+}
+body .main-container .work-container {
+  background-color: #ff8b64;
+}
+body .main-container .play-container {
+  background-color: #56c2e6;
+}
+body .main-container .study-container {
+  background-color: #fe5f7d;
+}
+body .main-container .exercise-container {
+  background-color: #4dd083;
+}
+body .main-container .social-container {
+  background-color: #7335d2;
+}
+body .main-container .selfcare-container {
+  background-color: #f0c75a;
 }
 body h3,
 body h2,

@@ -3,6 +3,12 @@ $bgColorMain: #0c1323;
 $bgColorUserContainer: #1d204b;
 $bgColorInfoContainer: #5745ea;
 $bgColorTimeContainer: #ff8b64;
+$bgColorPlayContainer: #56c2e6;
+$bgColorStudyContainer: #fe5f7d;
+$bgColorExerciseContainer: #4dd083;
+$bgColorSocialContainer: #7335d2;
+$bgColorSelfCareContainer: #f0c75a;
+$bgColorHoverTimeContainer: #606492;
 
 /* font colors */
 $fontColorH2: #ffffff;
@@ -95,81 +101,115 @@ body {
     }
   }
 
-  .time-container {
-    background-color: $bgColorTimeContainer;
+  .main-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    width: 87%;
-    height: 180px;
-    border-radius: 25px;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
 
-    .image-container {
-      display: flex;
-      justify-content: flex-end;
-      position: absolute;
-      top: 260px;
-      left: 300px;
-
-      img {
-        width: 80px;
-        height: 80px;
-      }
-    }
-
-    .general-info-container {
-      position: relative;
-      background-color: $bgColorUserContainer;
+    .time-container {
+      background-color: $bgColorTimeContainer;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 75%;
+      justify-content: flex-end;
+      width: 87%;
+      height: 200px;
       border-radius: 25px;
 
-      .top-section {
+      .image-container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
+        justify-content: flex-end;
+        height: 25%;
+        margin-right: 20px;
 
-        h3 {
-          font-size: 25px;
-          margin-top: 12px;
-        }
-
-        a {
-          color: #ffffff;
-          opacity: 0.6;
-          font-size: 40px;
-          height: 60px;
-
-          &:hover {
-            opacity: 1;
-          }
-
-          &:focus {
-            opacity: 1;
-          }
+        img {
+          width: 85px;
+          height: 85px;
         }
       }
 
-      .lower-section {
+      .general-info-container {
+        position: relative;
+        background-color: $bgColorUserContainer;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 90%;
+        height: 75%;
+        border-radius: 25px;
 
-        h1 {
-          font-size: 40px;
-          font-weight: lighter;
+        &:hover {
+          background-color: $bgColorHoverTimeContainer;
         }
 
-        p {
-          opacity: 0.6;
-          font-size: 15px;
+        .top-section {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+
+          h3 {
+            font-size: 25px;
+            margin-top: 12px;
+          }
+
+          a {
+            color: #ffffff;
+            opacity: 0.6;
+            font-size: 40px;
+            height: 60px;
+
+            &:hover {
+              opacity: 1;
+            }
+
+            &:focus {
+              opacity: 1;
+            }
+          }
+        }
+
+        .lower-section {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+
+          h1 {
+            font-size: 40px;
+            font-weight: lighter;
+          }
+
+          p {
+            opacity: 0.6;
+            font-size: 15px;
+          }
         }
       }
+    }
+    .work-container {
+      background-color: $bgColorTimeContainer;
+    }
+
+    .play-container {
+      background-color: $bgColorPlayContainer;
+    }
+
+    .study-container {
+      background-color: $bgColorStudyContainer;
+    }
+
+    .exercise-container {
+      background-color: $bgColorExerciseContainer;
+    }
+
+    .social-container {
+      background-color: $bgColorSocialContainer;
+    }
+
+    .selfcare-container {
+      background-color: $bgColorSelfCareContainer;
     }
   }
 
